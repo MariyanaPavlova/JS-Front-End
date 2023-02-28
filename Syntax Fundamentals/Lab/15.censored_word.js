@@ -1,7 +1,7 @@
 function sensWord (text, word){
     
     
-    while (text.includes(word)){
+    while (text.indexOf(word)>=0)   {
         text = text.replace(word, "*".repeat(word.length))
     }
 
