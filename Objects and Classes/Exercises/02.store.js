@@ -10,7 +10,7 @@ function store(stock, delivery) {
         let prod = delivery[i];
 
         if (!storeProd.hasOwnProperty(prod)) {
-        storeProd[prod] = 0;
+          storeProd[prod] = 0;
         }    
         storeProd[prod] += Number(delivery[i + 1]);
     }
